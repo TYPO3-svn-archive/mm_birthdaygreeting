@@ -1,0 +1,144 @@
+<T3DataStructure>
+	<meta>
+	<!--  <langDisable>1</langDisable> -->
+	<!--  <langChildren>1</langChildren> -->
+	</meta>
+ <sheets>
+ <sMAIN>
+  <ROOT>
+   <TCEforms>
+    <sheetTitle>LLL:EXT:mm_birthdaygreeting/locallang_db.php:tt_content.pi_flexform.sheet_main</sheetTitle>
+   </TCEforms>
+   <type>array</type>
+    <el>
+		<show_message_before>
+			<TCEforms>
+			<label>LLL:EXT:mm_birthdaygreeting/locallang_db.php:tt_content.pi_flexform.sheet_main.show_message_before</label>
+			<config>
+				<default>1</default>
+				<type>check</type>
+			</config>
+			</TCEforms>
+		</show_message_before>
+
+  		<days_before>
+			<TCEforms>
+			<label>LLL:EXT:mm_birthdaygreeting/locallang_db.php:tt_content.pi_flexform.sheet_main.label.days_before</label>
+			<config>
+				<default>5</default>
+				<type>input</type>
+				<eval>num</eval>
+				<size>3</size>
+				<max>100</max>
+				<range type="array">
+					<lower>1</lower>
+					<upper>100</upper>
+				</range>
+			</config>
+			</TCEforms>
+		</days_before>
+
+		<show_message_after>
+			<TCEforms>
+			<label>LLL:EXT:mm_birthdaygreeting/locallang_db.php:tt_content.pi_flexform.sheet_main.show_message_after</label>
+			<config>
+				<default>0</default>
+				<type>check</type>
+			</config>
+			</TCEforms>
+		</show_message_after>
+
+  		<days_after>
+			<TCEforms>
+			<label>LLL:EXT:mm_birthdaygreeting/locallang_db.php:tt_content.pi_flexform.sheet_main.label.days_after</label>
+			<config>
+				<default>5</default>
+				<type>input</type>
+				<eval>num</eval>
+				<size>3</size>
+				<max>100</max>
+				<range type="array">
+					<lower>1</lower>
+					<upper>100</upper>
+				</range>
+			</config>
+			</TCEforms>
+		</days_after>
+    </el>
+   </ROOT>
+  </sMAIN>
+ <sMESSAGE_BEFORE>
+  <ROOT>
+   <TCEforms>
+    <sheetTitle>LLL:EXT:mm_birthdaygreeting/locallang_db.php:tt_content.pi_flexform.sheet_message_before</sheetTitle>
+   </TCEforms>
+   <type>array</type>
+    <el>
+		<message_before>
+			<TCEforms>
+			<label>LLL:EXT:mm_birthdaygreeting/locallang_db.php:tt_content.pi_flexform.sheet_message_before.message_before</label>
+			<config>
+				<default>Hello ###NAME###,in ###ABS_DAYS_TIL_BDAY###day/s you will celebrate your ###CUR_AGE_PLUS_ONE###th birthday.</default>
+				<type>text</type>
+				<cols>40</cols>
+				<rows>5</rows>
+				<wrap>virtual</wrap>
+			</config>
+			<!--  <defaultExtras>richtext[cut|copy|paste|formatblock|textcolor|bold|italic|underline]:rte_transform[mode=ts_css]</defaultExtras> -->
+			</TCEforms>
+		</message_before>
+
+    </el>
+   </ROOT>
+  </sMESSAGE_BEFORE>  
+<sMESSAGE_BIRTHDAY>
+  <ROOT>
+   <TCEforms>
+    <sheetTitle>LLL:EXT:mm_birthdaygreeting/locallang_db.php:tt_content.pi_flexform.sheet_message_birthday</sheetTitle>
+   </TCEforms>
+   <type>array</type>
+    <el>
+		<message_birthday>
+			<TCEforms>
+			<label>LLL:EXT:mm_birthdaygreeting/locallang_db.php:tt_content.pi_flexform.sheet_message_birthday.message_birthday</label>
+			<config>
+				<default>Hello ###NAME###,today is your in ###AGE###th birthday. We wish you a HAPPY BIRTHDAY!</default>
+				<type>text</type>
+				<cols>40</cols>
+				<rows>5</rows>
+				<wrap>virtual</wrap>
+			</config>
+			<!--  <defaultExtras>richtext[cut|copy|paste|formatblock|textcolor|bold|italic|underline]:rte_transform[mode=ts_css]</defaultExtras> -->
+			</TCEforms>
+		</message_birthday>
+
+    </el>
+   </ROOT>
+  </sMESSAGE_BIRTHDAY>  
+<sMESSAGE_AFTER>
+  <ROOT>
+   <TCEforms>
+    <sheetTitle>LLL:EXT:mm_birthdaygreeting/locallang_db.php:tt_content.pi_flexform.sheet_message_after</sheetTitle>
+   </TCEforms>
+   <type>array</type>
+    <el>
+		<message_after>
+			<TCEforms>
+			<label>LLL:EXT:mm_birthdaygreeting/locallang_db.php:tt_content.pi_flexform.sheet_message_after.message_after</label>
+			<config>
+				<default>Hello ###NAME###, on the ###THIS_YEAR_BIRTHDAY### you celebrated your ###AGE###th birthday. We wish you all the best and a great year ahead.</default>
+				<type>text</type>
+				<cols>30</cols>
+				<rows>5</rows>
+				<wrap>virtual</wrap>
+			</config>
+			<!--  <defaultExtras>richtext[cut|copy|paste|formatblock|textcolor|bold|italic|underline]:rte_transform[mode=ts_css]</defaultExtras> -->
+			</TCEforms>
+		</message_after>
+
+    </el>
+   </ROOT>
+  </sMESSAGE_AFTER>  
+  
+  </sheets>
+</T3DataStructure>

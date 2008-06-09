@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'mm_birthdaygreeting'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="fe_users.tx_mmbirthdaygreeting_birthday">Birthday (tt.mm.yyyy)</label>
+			<label index="tt_content.list_type_pi1">MM Birthday-Greeting</label>
+			
+			<label index="tt_content.pi_flexform.sheet_main">Basesettings</label>
+			<label index="tt_content.pi_flexform.sheet_main.show_message_before">Show message before birthday</label>
+			<label index="tt_content.pi_flexform.sheet_main.label.days_before">Number of days before</label>
+			<label index="tt_content.pi_flexform.sheet_main.show_message_after">Show message after birthday</label>
+			<label index="tt_content.pi_flexform.sheet_main.label.days_after">Number of days after</label>
+
+			<label index="tt_content.pi_flexform.sheet_message_before">Message before</label>
+			<label index="tt_content.pi_flexform.sheet_message_before.message_before">Message</label>
+
+			<label index="tt_content.pi_flexform.sheet_message_birthday">Birthdaymessage</label>
+			<label index="tt_content.pi_flexform.sheet_message_birthday.message_birthday">Message</label>
+
+			<label index="tt_content.pi_flexform.sheet_message_after">Message after</label>
+			<label index="tt_content.pi_flexform.sheet_message_after.message_after">Message</label>			
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="fe_users.tx_mmbirthdaygreeting_birthday">Geburtstag (tt.mm.jjjj)</label>
+			<label index="tt_content.list_type_pi1">MM Geburtstagsgruß</label>
+			
+			<label index="tt_content.pi_flexform.sheet_main">Einstellungen</label>
+			<label index="tt_content.pi_flexform.sheet_main.show_message_before">Nachricht vor Geburtstag anzeigen</label>
+			<label index="tt_content.pi_flexform.sheet_main.label.days_before">Anzahl Tage vor Geburtstag</label>
+			<label index="tt_content.pi_flexform.sheet_main.show_message_after">Nachricht nacht Geburtstag anzeigen</label>
+			<label index="tt_content.pi_flexform.sheet_main.label.days_after">Anzahl Tage nach Geburtstag</label>
+
+			<label index="tt_content.pi_flexform.sheet_message_before">Nachricht davor</label>
+			<label index="tt_content.pi_flexform.sheet_message_before.message_before">Nachricht</label>
+
+			<label index="tt_content.pi_flexform.sheet_message_birthday">Geburtstagsnachricht</label>
+			<label index="tt_content.pi_flexform.sheet_message_birthday.message_birthday">Nachricht</label>
+
+			<label index="tt_content.pi_flexform.sheet_message_after">Nachricht danach</label>
+			<label index="tt_content.pi_flexform.sheet_message_after.message_after">Nachricht</label>			
+			
+		</languageKey>
+	</data>
+</T3locallang>

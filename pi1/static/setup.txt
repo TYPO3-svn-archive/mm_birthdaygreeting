@@ -1,0 +1,77 @@
+plugin.tx_mmbirthdaygreeting_pi1 {
+	// Allows Caching for this plugin
+	allowCaching = 0
+	
+	CMD =
+	pidList =
+	recursive =
+
+	birthday_date_format = %d.%m.%Y	
+	
+	days_before = 5;
+	days_after = 5;
+	
+	// Placeholders: (uppercase)
+	//     year,doj,month,day,this_year_birthday,days_til_bday,
+	//	   abs_days_til_bday,today,uid,name,age,birthday,cur_age_plus_one,cur_age_minus_one
+	//	
+	message_before = Hallo ###NAME### noch ###ABS_DAYS_TIL_BDAY###
+	message_birthday = Hallo, ###NAME### wir w&uuml;nschen dir...
+	message_after = Hallo, ###NAME### leider ist dein Geburtstag schon seit ###ABS_DAYS_TIL_BDAY### Tagen vorbei.
+	
+	show_message_before = 1
+	show_message_after = 0
+}
+
+plugin.tx_mmbirthdaygreeting_pi1.singleView {
+	templateFile = single_view.html
+}
+
+
+plugin.tx_mmbirthdaygreeting_pi1.typodbfield {
+	// Dummyfields are not in the DB but if they are 
+	// in here a fieldvalue ist requestet for them in 
+	// the framework
+
+	// The message-field will be set in the plugincode.
+	
+	dummyfieldlist = message,abs_days_til_bday,cur_age_plus_one,cur_age_minus_one
+	
+	message {
+		value = -- dummy value --
+	}
+	
+	abs_days_til_bday {
+		value = -- dummy value --
+		}
+		
+	cur_age_plus_one {
+		value = -- dummy value --
+		}
+		
+	cur_age_minus_one {
+		value = -- dummy value --
+		}				
+}
+
+# Example of default set CSS styles (these go into the document header):
+plugin.tx_mmbirthdaygreeting_pi1._CSS_DEFAULT_STYLE (
+
+.tx-mmbirthdaygreeting-pi1 .bday-countdown {
+  	padding: 0.5em; 
+  	border: 1px dotted #ff0000; 
+  	font-size: 105%;
+  	width: 320px;
+  	/*
+  	margin-left: auto;
+  	margin-right: auto;
+  	*/
+  	}
+  	
+.tx-mmbirthdaygreeting-pi1 strong {
+  	color: #ff0000;
+  	font-weight: bold;
+  	}  	
+
+)
+
